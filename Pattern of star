@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main() {
+    int rows = 5; // Number of rows for the pattern
+
+    for (int i = 0; i < rows; i++) {
+        // Print leading spaces before the first star
+        for (int j = 0; j < rows - i - 1; j++) {
+            printf("  ");
+        }
+
+        // Print the first star
+        printf("*");
+
+        // Print spaces between the stars
+        if (i > 0) {
+            for (int j = 0; j < 2 * i - 1; j++) {
+                printf(" ");
+            }
+            // Print the second star
+            printf("*");
+        }
+
+        // Move to the next line
+        printf("\n");
+    }
+
+    return 0;
+}￼Enter
